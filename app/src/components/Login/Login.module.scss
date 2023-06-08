@@ -1,3 +1,73 @@
+@use "../../styles/vars";
+
 .container{
-  background: aqua;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 1440px;
+  .login__form{
+    padding: 114px 0 0 112px;
+
+    &__header{
+      .title{
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 40px;
+        color: vars.$primaryColor;
+      }
+      .subtitle{
+        margin-top: 8px;
+        max-width: 357px;
+        font-size: 14px;
+        line-height: 20px;
+        color: vars.$primaryColor;;
+      }
+    }
+    .form{
+      margin-top: 48px;
+      .input__container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        &:nth-last-child(2){
+          margin-top: 24px;
+        }
+        .label{
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 20px;
+          color: vars.$primaryColor;
+        }
+        .input{
+          width: 384px;
+          height: 48px;
+          margin-top: 8px;
+          padding: 14px 15px;
+          font-size: 14px;
+          line-height: 20px;
+          background: #FFFFFF;
+          border: 1px solid #EBEBED;
+          border-radius: 8px;
+        }
+        .eye_icon{
+          position: absolute;
+          bottom: 15px;
+          right: 17px;
+        }
+      }
+      .button{
+        width: 384px;
+        height: 48px;
+        margin-top: 108px;
+        background: #3626A7;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+        cursor: pointer;
+      }
+    }
+  }
 }

@@ -1,0 +1,94 @@
+@use "../../../styles/vars";
+
+.container{
+  width: 100%;
+  max-width: 253px;
+
+  border-right: 1px solid #E7E8EF;
+  .header{
+    display: flex;
+    padding: 24px 24px 15px 24px;
+    flex-direction: column;
+    border-bottom: 1px solid #E7E8EF;
+    .title{
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 32px;
+      text-transform: uppercase;
+      color: #3626A7;
+    }
+    .second__title{
+      margin-top: 50px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      color: vars.$primaryColor;
+    }
+  }
+
+  .filters{
+    &__container{
+      padding: 0 24px 24px 24px;
+    }
+    &__content{
+      .input{
+        margin-top: 16px;
+        position: relative;
+        border-bottom: 1px solid #E7E8EF;
+        padding-bottom: 15px;
+        input{
+          width: 204px;
+          height: 40px;
+          background: #FFFFFF;
+          border: 1px solid #E7E8EF;
+          border-radius: 6px;
+          padding: 8px 8px 8px 7px;
+          margin-top: 8px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+
+        }
+        .job{
+          padding-left: 35px;
+        }
+        .search_icon{
+          position: absolute;
+          bottom: 23px;
+          left: 12px;
+        }
+      }
+      .label{
+        display: flex;
+        gap: 8.2px;
+        h4{
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 24px;
+          color: vars.$primaryColor;
+        }
+        .job_img{
+          margin-top: 1px;
+        }
+        .geo_img{
+          margin-left: 2px;
+          margin-right: 2px;
+        }
+      }
+    }
+  }
+}
+
+::-webkit-input-placeholder {
+  color: #9195A4;
+}
+:-moz-placeholder {
+  color: #9195A4;
+}
+::-moz-placeholder {
+  color: #9195A4;
+}
+:-ms-input-placeholder {
+  color: #9195A4;
+}

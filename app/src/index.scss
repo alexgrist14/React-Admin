@@ -1,3 +1,5 @@
+@use "assets/fonts/fonts";
+@use "styles/vars";
 ul {
   list-style: none;
 }
@@ -31,4 +33,20 @@ a {
   border: 0;
   outline: 0;
   box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+::-webkit-input-placeholder {
+  color: vars.$secondaryColor;
+}
+:-moz-placeholder {
+  color: vars.$secondaryColor;
+}
+::-moz-placeholder {
+  color: vars.$secondaryColor;
+}
+:-ms-input-placeholder {
+  color: vars.$secondaryColor;
 }

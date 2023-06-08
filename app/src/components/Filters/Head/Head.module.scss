@@ -1,0 +1,28 @@
+@use "../../../styles/vars";
+
+.container{
+  display: flex;
+  padding: 24px 0 16px 24px;
+  height: 72px;
+  width: 100%;
+  gap: 8px;
+  .title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: vars.$primaryColor;
+  }
+  .total_count{
+    width: 80px;
+    height: 32px;
+    padding-block: 4px;
+    background: rgba(54, 38, 167, 0.1);
+    border-radius: 26px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #3626A7;
+  }
+}

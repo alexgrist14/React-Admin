@@ -1,11 +1,11 @@
-import React from "react"
-import ReactDOM from "react-dom/client"
-import "./index.scss"
-import Login from "./components/Login/Login"
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.scss";
+import Main from "./components/Main/Main";
 
-const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
   <React.StrictMode>
-    <Login></Login>
+    <Main/>
   </React.StrictMode>
-)
+);
