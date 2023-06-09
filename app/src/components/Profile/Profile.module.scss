@@ -1,0 +1,184 @@
+@use "../../styles/vars";
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+
+  .header {
+    display: flex;
+    padding: 24px 24px 15px 24px;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid #E7E8EF;
+
+    &_title {
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 32px;
+      text-transform: uppercase;
+      color: vars.$blueText;
+    }
+
+    &_user {
+      width: 32px;
+      height: 32px;
+      background: #F5F6F9;
+      border: 1px solid #E7E8EF;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 32px;
+      text-align: center;
+      vertical-align: center;
+      color: #9195A4;
+    }
+  }
+  .content{
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    .profile{
+      margin-top: 16px;
+      margin-left: -70px;
+      &__link{
+        display: flex;
+        img{
+          margin-left: 2px;
+        }
+        &_text{
+          margin-left: 6px;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 20px;
+          color: #9195A4;
+        }
+      }
+      &__info{
+        width: 488px;
+        height: 252px;
+        border: 1px solid #E7E8EF;
+        border-radius: 8px;
+        margin-top: 16px;
+        &__head{
+          display: flex;
+          justify-content: space-between;
+          padding: 10px 16px 16px 15px;
+          .head{
+            &__title{
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 24px;
+              color: vars.$primaryColor;
+            }
+            &__logout{
+              display: flex;
+              align-items: center;
+              gap: 9px;
+              img{
+                margin-top: 3px;
+              }
+              .text{
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+                color: vars.$primaryColor;
+              }
+            }
+          }
+        }
+        &__name{
+          display: flex;
+          .name{
+            &_title{
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 20px;
+              color: vars.$primaryColor;
+            }
+            &_input{
+              width: 220px;
+              height: 48px;
+              padding: 14px 16px;
+              background: #FFFFFF;
+              border: 1px solid #EBEBED;
+              border-radius: 8px;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 20px;
+              color: vars.$primaryColor;
+            }
+          }
+        }
+        &__email{
+          .email{
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            color: vars.$primaryColor;
+            &__change{
+              &_text{
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+                color: vars.$blueText;
+              }
+            }
+          }
+        }
+      }
+    }
+    .subscription{
+      margin-top: 51px;
+      &_title{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: vars.$primaryColor;
+      }
+      &__info{
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+        max-width: 696px;
+        width: 150%;
+        height: 80px;
+        background: #C9C1FF;
+        border-radius: 8px;
+        &__text{
+          .title{
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+            color: vars.$primaryColor;
+          }
+          .subtitle{
+            margin-top: 4px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: vars.$primaryColor;
+          }
+        }
+        &_button{
+          display: flex;
+          width: 156px;
+          height: 48px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          background: vars.$blueText;
+          border-radius: 8px;
+          color: #FFFFFF;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: 0.105px;
+          img{
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}

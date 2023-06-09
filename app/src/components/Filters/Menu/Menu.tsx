@@ -26,7 +26,7 @@ const Menu: FC = () => {
             <img className={styles.geo_img} src={geoIcon} alt="geoicon" />
             <h4>Location</h4>
           </label>
-          <div placeholder="Choose location" id="location" /></div>
+          <input type="text" placeholder="Choose location" id="location" /></div>
         <div className={styles.input}>
           <label className={styles.label} htmlFor="industry">
             <img src={industryIcon} alt="industry icon" />

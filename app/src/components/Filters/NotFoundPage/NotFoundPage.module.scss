@@ -1,0 +1,47 @@
+@use "../../../styles/vars";
+
+.container{
+  display: flex;
+  margin-top: 210px;
+  margin-left: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .img{
+    width: 155px;
+    height: 137px;
+    filter: drop-shadow(0px 3.23879px 6.47757px rgba(124, 119, 139, 0.25));
+  }
+  .title{
+    margin-top: 16px;
+    margin-right: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: vars.$primaryColor;
+  }
+  .subtitle{
+    font-weight: 400;
+    margin-top: 7px;
+    margin-left: -50px;
+    max-width: 300px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: vars.$primaryColor;
+  }
+  .button{
+    margin-top: 40px;
+    margin-right: 52px;
+    width: 215px;
+    height: 40px;
+    background: #F5F6F9;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: vars.$blueText;
+  }
+}
